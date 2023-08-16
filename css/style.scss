@@ -88,6 +88,25 @@ body {
    color: #000;
 }
 
+.btn {
+   flex: 0 0 auto;
+   background-color: #FF4F79;
+   color: #fff;
+   padding: 1rem 4.0rem;
+   border-radius: 47px;
+   transition: background-color 0.3s;
+   &:hover {
+      background-color: #253237;
+   }
+}
+
+.btn--dark {
+   background-color: #253237;
+   &:hover {
+      background-color: #FF4F79;
+   }
+}
+
 
 // Style CSS
 
@@ -124,22 +143,13 @@ body {
 
    &__menu {
       //justify-self: center;
-      width: max-content;
+      //width: max-content;
+      
    }
 
    /* .header__button */
 
-   &__button {
-      flex: 0 0 auto;
-      background-color: #FF4F79;
-      color: #fff;
-      padding: 1rem 4.0rem;
-      border-radius: 47px;
-      transition: background-color 0.3s;
-      &:hover {
-         background-color: #e0375e;
-      }
-   }
+   
 }
 .menu {
 
@@ -150,9 +160,13 @@ body {
       flex: 1 1 auto;
       display: flex;
       flex-wrap: wrap;
-      //justify-content: space-around;
+      justify-content: center;
       column-gap: 6.0rem;
       row-gap: 1.5rem; 
+      @media (max-width: 888px) {
+         column-gap: 4.0rem;
+         
+      }
    }
 
    /* .menu__item */
@@ -186,18 +200,27 @@ body {
 .main-section {
    position: relative;
    min-height: 100vh;
-   /* .main-section__container */
+   //display: flex;
+   
 
+   /* .main-section__container */
+   
    &__container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      min-height: 100vh;
+      flex: 1 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       position: relative;
       z-index: 10;
+      align-items: center;
+      padding-top: 9.0rem;
    }
 
    /* .main-section__content */
 
    &__content {
+      flex: 1 1 30%;
    }
 
    /* .main-section__title */
@@ -213,7 +236,25 @@ body {
    /* .main-section__image */
 
    &__image {
+      flex: 0 1 auto;
    }
+
+   .image-main {
+      position: relative;
+      & img {
+         width: 100%;
+         height: 100%;
+      }
+		&__background {
+		}
+
+		&__front {
+         position: absolute;
+         top: 0;
+         left: 0;
+		}
+}
+
 
    /* .main-section__background */
 

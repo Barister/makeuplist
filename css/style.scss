@@ -352,3 +352,92 @@ body {
    }
 }
 
+.page {
+
+   /* .page__main */
+
+   &__main {
+   }
+}
+.main-spheres {
+
+   /* .main-spheres__container */
+
+   &__container {
+      padding-top: 5.0rem;
+      padding-bottom: 5.0rem; 
+   }
+
+   /* .main-spheres__text */
+
+   &__text {
+      max-width: 59.0rem;
+      font-size: 2.8rem;
+      font-weight: 300;
+      line-height: 3.8rem;
+   }
+
+   /* .main-spheres__grid */
+
+   &__grid {
+      
+   }
+}
+.grid-spheres {
+   padding: 3.0rem 0px 3.0rem 0px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   justify-items: center;
+   align-items: center;
+   row-gap: 4.0rem;
+   //height: min-content;
+
+   /* .grid-spheres__item */
+
+   .grid-spheres {
+
+		/* .grid-spheres__item */
+
+		&__item {
+         
+		}
+
+		/* .grid-spheres__number */
+
+		&__number {
+         font-size: 9.7rem;
+		}
+
+		/* .grid-spheres__title */
+
+		&__title {
+         font-size: 1.8rem;
+         
+		}
+
+		/* .grid-spheres__background */
+
+		&__background {
+         position: relative;
+		}
+}
+.item-spheres {
+      position: relative;
+		/* .item-spheres__content */
+
+		&__content {
+         position: absolute;
+         top: 0;
+         left: 20px;
+         display: flex;
+         color: #fff;
+         z-index: 10;
+         width: 100%;
+         height: 100%;
+         align-items: center;
+         //justify-content: space-around;
+         gap: 20px;
+		}
+}
+
+}

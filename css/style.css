@@ -298,3 +298,62 @@ body {
   top: 0;
   left: 0;
 }
+
+.page {
+  /* .page__main */
+}
+.main-spheres {
+  /* .main-spheres__container */
+  /* .main-spheres__text */
+  /* .main-spheres__grid */
+}
+.main-spheres__container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.main-spheres__text {
+  max-width: 59rem;
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 3.8rem;
+}
+.grid-spheres {
+  padding: 3rem 0px 3rem 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  align-items: center;
+  row-gap: 4rem;
+  /* .grid-spheres__item */
+}
+.grid-spheres .grid-spheres {
+  /* .grid-spheres__item */
+  /* .grid-spheres__number */
+  /* .grid-spheres__title */
+  /* .grid-spheres__background */
+}
+.grid-spheres .grid-spheres__number {
+  font-size: 9.7rem;
+}
+.grid-spheres .grid-spheres__title {
+  font-size: 1.8rem;
+}
+.grid-spheres .grid-spheres__background {
+  position: relative;
+}
+.grid-spheres .item-spheres {
+  position: relative;
+  /* .item-spheres__content */
+}
+.grid-spheres .item-spheres__content {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: flex;
+  color: #fff;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
+}

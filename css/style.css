@@ -105,7 +105,6 @@ body {
   /* .header__container */
   /* .header__logo */
   /* .header__menu */
-  /* .header__button */
 }
 .header__container {
   display: flex;
@@ -119,6 +118,11 @@ body {
     row-gap: 1.5rem;
   }
 }
+.header.scroll {
+  background-color: rgba(37, 50, 55, 0.9);
+  color: #fff;
+}
+
 .menu {
   /* .menu__list */
   /* .menu__item */
@@ -148,7 +152,6 @@ body {
   }
 }
 .menu__link {
-  color: #000;
   transition: all 0.3s;
 }
 .menu__link:hover {

@@ -148,7 +148,10 @@ body {
       
    }
 
-   /* .header__button */
+   &.scroll {
+      background-color: rgba(37, 50, 55, 0.9);
+      color: #fff;
+   }
 
    
 }
@@ -184,7 +187,7 @@ body {
    /* .menu__link */
 
    &__link {
-      color:#000;
+      
       transition: all 0.3s;
       &:hover {
          text-decoration: underline;

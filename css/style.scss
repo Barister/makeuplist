@@ -128,7 +128,7 @@ body {
       gap: 3.0rem;
       @media (max-width: 655px) {
          flex-direction: column;
-         
+         row-gap: 1.5rem;
       }
    }
 
@@ -160,12 +160,13 @@ body {
       flex: 1 1 auto;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-end;
+      //justify-self: center;
       column-gap: 6.0rem;
       row-gap: 1.5rem; 
       @media (max-width: 888px) {
          column-gap: 4.0rem;
-         
+         margin-right: 15px;
       }
    }
 
@@ -215,28 +216,63 @@ body {
       z-index: 10;
       align-items: center;
       padding-top: 9.0rem;
+      @media (max-width: 920px) {
+         padding-top: 17.7rem;
+         gap: 8.5rem;
+      }
+      @media (max-width: 655px) {
+         padding-top: 22.7rem;
+      }
    }
 
    /* .main-section__content */
 
    &__content {
       flex: 1 1 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12.5rem;
+      max-width: 80ch;
+      @media (max-width: 920px) {
+         gap: 6.5rem;
+      }
    }
 
    /* .main-section__title */
 
    &__title {
+      //font-size: 3.6rem;
+      letter-spacing: 1.5px;
+      font-weight: 400;
+      line-height: 1.2;
+      & span {
+         font-style: italic;
+         font-weight: 300;
+         letter-spacing: normal;
+      }
    }
 
    /* .main-section__text */
 
    &__text {
+      font-size: 2rem;
+      font-weight: 300;
    }
+
+  
+	&__button {
+      width: max-content;
+	}
+
+
 
    /* .main-section__image */
 
    &__image {
       flex: 0 1 auto;
+      cursor: grab;
+      transition: transform 12s ease;
    }
 
    .image-main {
@@ -253,7 +289,25 @@ body {
          top: 0;
          left: 0;
 		}
-}
+   }
+
+   @keyframes spin-clockwise {
+      from {
+         transform: rotate(0deg);
+      }
+      to {
+         transform: rotate(360deg);
+      }
+   }
+
+   @keyframes spin-counter-clockwise {
+      from {
+         transform: rotate(360deg);
+      }
+      to {
+         transform: rotate(0deg);
+      }
+   }
 
 
    /* .main-section__background */

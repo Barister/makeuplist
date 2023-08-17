@@ -1,4 +1,4 @@
-// управление main__image
+// main__image animation
 
 const button = document.querySelector('.main-section__button');
 const frontImage = document.querySelector('.image-main__front');
@@ -20,55 +20,19 @@ button.addEventListener('click', () => {
 
 // scroll-background
 
-
 const header = document.querySelector('.header');
+const logo = document.querySelector('.header__logo');
 
-const svgObject = document.querySelector('.header__logo-image');
-const svgDoc = svgObject.contentDocument;
-const paths = svgDoc.querySelectorAll('path');
-
-
-
-// Определите функцию, которая будет добавлять или удалять класс в зависимости от скролла
 function toggleHeaderClass() {
    if (window.scrollY > 0) {
       header.classList.add('scroll');
-      for (var i = 0; i < paths.length; i++) {
-         paths[i].setAttribute('fill', '#fff'); // Замените на нужный цвет
-      }
+      logo.classList.add('scroll');
    } else {
       header.classList.remove('scroll');
-      for (var i = 0; i < paths.length; i++) {
-         paths[i].setAttribute('fill', '#000'); // Замените на нужный цвет
-      }
+      logo.classList.remove('scroll');
    }
 }
 
-// Добавьте обработчик события скролла, который вызывает функцию toggleHeaderClass
 window.addEventListener('scroll', toggleHeaderClass);
 
 
-
-// Получение объекта SVG
-// var svgObject = document.querySelector('.header__logo-image');
-
-// // Слушатель события загрузки объекта SVG
-// svgObject.addEventListener('load', function () {
-//    var svgDoc = svgObject.contentDocument;
-//    var svgElement = svgDoc.querySelector('svg');
-//    svgElement.style.fill = '#ff0000'; // Измените цвет заливки на нужный
-// });
-
-// var paths = document.querySelectorAll('.header__logo-image svg path');
-
-// for (var i = 0; i < paths.length; i++) {
-//    paths[i].style.fill = '#fff'; // Замените на нужный цвет
-// }
-
-// var svgObject = document.querySelector('.header__logo-image');
-// var svgDoc = svgObject.contentDocument;
-// var paths = svgDoc.querySelectorAll('path');
-
-// for (var i = 0; i < paths.length; i++) {
-//    paths[i].setAttribute('fill', '#ff0000'); // Замените на нужный цвет
-// }

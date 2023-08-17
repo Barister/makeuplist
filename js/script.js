@@ -7,11 +7,11 @@ const backImage = document.querySelector('.image-main__background');
 let rotationActive = false;
 
 button.addEventListener('click', () => {
-   rotationActive = !rotationActive; // Инвертируем состояние
+   rotationActive = !rotationActive;
 
    if (rotationActive) {
-      frontImage.style.animation = 'spin-clockwise 12s infinite linear';
-      backImage.style.animation = 'spin-counter-clockwise 12s infinite linear';
+      frontImage.style.animation = 'spin-clockwise 8s ease';
+      backImage.style.animation = 'spin-counter-clockwise 8s ease';
    } else {
       frontImage.style.animation = 'spin-counter-clockwise 2s forwards ease';
       backImage.style.animation = 'spin-clockwise 2s forwards ease';

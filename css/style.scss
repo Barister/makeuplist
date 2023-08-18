@@ -84,6 +84,15 @@ body {
 
 // Modules
 
+.wrapper-background {
+   background-color: #F2FDFF;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
 .title {
    font-size: 3.6rem;
    color: #000;
@@ -177,6 +186,7 @@ body {
       }
       @media (max-width: 500px) {
          justify-content: center;
+         margin-right: 0;
          column-gap: 2.0rem;
       }
    }
@@ -342,14 +352,7 @@ body {
 
    /* .main-section__background */
 
-   &__background {
-      background-color: #F2FDFF;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-   }
+   
 }
 
 .page {
@@ -450,4 +453,152 @@ body {
 		}
 }
 
+}
+
+
+.page {
+
+   /* .page__main */
+
+   &__main {
+   }
+}
+.main-contacts {
+   position: relative;
+   /* .main-contacts__container */
+
+   &__container {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      
+      justify-content: space-between;
+      align-items: center;
+      gap: 4.0rem;
+      padding: 13.0rem 0px 10.0rem 0px;
+   }
+
+   /* .main-contacts__image */
+
+   &__image {
+      flex: 1 1 50%;
+   }
+
+   /* .main-contacts__content */
+
+   &__content {
+      flex: 1 1 50%;
+      max-width: 80ch;
+   }
+
+   /* .main-contacts__background */
+
+   &__background {
+   }
+}
+.image-main {
+
+   /* .image-main__upper */
+
+   &__upper {
+   }
+}
+.content-contacts {
+
+   /* .content-contacts__card */
+
+   &__card {
+   }
+}
+.card-contacts {
+
+   /* .card-contacts__title */
+
+   &__title {
+   }
+
+   /* .card-contacts__text */
+
+   &__text {
+   }
+}
+.title {
+}
+.cards-contacts {
+
+   /* .cards-contacts__link */
+
+   &__link {
+   }
+}
+
+
+.footer {
+   padding: 3.0rem 0px 3.0rem 0px;
+   /* .footer__container */
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      //flex-wrap: wrap;
+      gap: 3.0rem;
+      @media (max-width: 655px) {
+         flex-direction: column;
+         row-gap: 1.5rem;
+      }
+   }
+
+   /* .footer__logo */
+
+   &__logo {
+   }
+
+    /* .header__logo-image */
+
+   &__logo-image {
+   }
+
+   /* .footer__menu */
+
+   &__menu {
+   }
+
+   /* .footer__socials */
+
+   &__socials {
+      
+   }
+}
+
+
+
+  
+
+.menu {
+
+   /* .menu__list */
+
+   &__list {
+   }
+
+   /* .menu__item */
+
+   &__item {
+   }
+
+   /* .menu__link */
+
+   &__link {
+   }
+}
+.socials-footer {
+   display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+   /* .socials-footer__item */
+
+   &__item {
+   }
 }

@@ -96,14 +96,14 @@ body {
    padding: 1rem 4.0rem;
    border-radius: 47px;
    transition: background-color 0.3s;
-   &:hover {
+   &:hover, &:active {
       background-color: #253237;
    }
 }
 
 .btn--dark {
    background-color: #253237;
-   &:hover {
+   &:hover, &:active {
       background-color: #FF4F79;
    }
 }
@@ -388,6 +388,7 @@ body {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
    justify-items: center;
+   justify-content: center;
    align-items: center;
    row-gap: 4.0rem;
    //height: min-content;
@@ -399,7 +400,10 @@ body {
 		/* .grid-spheres__item */
 
 		&__item {
-         
+         max-width: 100%;
+         & img {
+            max-width: 100%;
+         }
 		}
 
 		/* .grid-spheres__number */
@@ -419,6 +423,9 @@ body {
 
 		&__background {
          position: relative;
+         @media (max-width: 320px) {
+            max-width: 280px;
+         }
 		}
 }
 .item-spheres {
@@ -437,6 +444,9 @@ body {
          align-items: center;
          //justify-content: space-around;
          gap: 20px;
+         @media (max-width: 320px) {
+            gap: 10px;
+         }
 		}
 }
 

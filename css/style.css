@@ -83,14 +83,14 @@ body {
   border-radius: 47px;
   transition: background-color 0.3s;
 }
-.btn:hover {
+.btn:hover, .btn:active {
   background-color: #253237;
 }
 
 .btn--dark {
   background-color: #253237;
 }
-.btn--dark:hover {
+.btn--dark:hover, .btn--dark:active {
   background-color: #FF4F79;
 }
 
@@ -322,6 +322,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-items: center;
+  justify-content: center;
   align-items: center;
   row-gap: 4rem;
   /* .grid-spheres__item */
@@ -332,6 +333,12 @@ body {
   /* .grid-spheres__title */
   /* .grid-spheres__background */
 }
+.grid-spheres .grid-spheres__item {
+  max-width: 100%;
+}
+.grid-spheres .grid-spheres__item img {
+  max-width: 100%;
+}
 .grid-spheres .grid-spheres__number {
   font-size: 9.7rem;
 }
@@ -340,6 +347,11 @@ body {
 }
 .grid-spheres .grid-spheres__background {
   position: relative;
+}
+@media (max-width: 320px) {
+  .grid-spheres .grid-spheres__background {
+    max-width: 280px;
+  }
 }
 .grid-spheres .item-spheres {
   position: relative;
@@ -356,4 +368,9 @@ body {
   height: 100%;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 320px) {
+  .grid-spheres .item-spheres__content {
+    gap: 10px;
+  }
 }

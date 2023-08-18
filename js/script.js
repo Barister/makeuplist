@@ -1,12 +1,12 @@
 // main__image animation
 
-const button = document.querySelector('.main-section__button');
+const buttonMain = document.querySelector('.main-section__button');
 const frontImage = document.querySelector('.image-main__front');
 const backImage = document.querySelector('.image-main__background');
 
 let rotationActive = false;
 
-button.addEventListener('click', () => {
+buttonMain.addEventListener('click', () => {
    rotationActive = !rotationActive;
 
    if (rotationActive) {
